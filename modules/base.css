@@ -1,0 +1,81 @@
+/*
+ * modules/base.css
+ * Nova Paleta: Branco, Bordô e Cimento Queimado
+ */
+
+:root {
+    --f-primary: #FFFFFF;        /* Fundo/Elementos - Branco */
+    --f-secondary: #F0F0F0;      /* Elementos - Cinza Claro (Boxes) */
+    --f-highlight: #A5002A;      /* Ação/Destaque - Bordô Forte */
+    --f-highlight-dark: #800020; /* Bordô Escuro (hover) */
+    --f-cimento: #555555;        /* Corpo de Texto - Cinza Escuro */
+    --f-text: #121212;           /* Texto Principal - Preto Escuro */
+    --f-spacing: 20px;
+    --f-header-bg: #4a0014;      /* Fundo Bordô Sólido para o Header */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--f-primary); 
+    color: var(--f-text);
+    line-height: 1.6;
+}
+
+/* Títulos Premium */
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: var(--f-highlight);
+    letter-spacing: 1.5px; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--f-highlight); 
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--f-spacing);
+}
+
+/* Botões com a nova identidade */
+.btn-primary {
+    background-color: var(--f-highlight); 
+    color: #FFFFFF !important; 
+    padding: 15px 35px; 
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: var(--f-highlight-dark);
+    transform: translateY(-3px); 
+    box-shadow: 0 5px 15px rgba(165, 0, 42, 0.4); 
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--f-highlight);
+    color: var(--f-highlight) !important;
+    padding: 12px 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--f-highlight); 
+    color: #FFFFFF !important; 
+}

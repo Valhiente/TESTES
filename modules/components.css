@@ -1,0 +1,81 @@
+/*
+ * modules/components.css
+ * Estilos para componentes como o Acordeão (FAQ) e Cards.
+ * Suporta setupAccordion.js.
+ */
+
+/* 1. Acordeão (FAQ) */
+.accordion-item {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #222;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    color: var(--color-text-light);
+}
+
+.accordion-header:hover {
+    background-color: #333;
+}
+
+.accordion-header::after {
+    content: '+';
+    font-size: 24px;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active {
+    background-color: var(--color-primary); /* Fica laranja quando aberto */
+    color: var(--color-text-light);
+}
+
+.accordion-header.active::after {
+    content: '-';
+}
+
+.accordion-content {
+    /* Estado padrão: Escondido */
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #1a1a1a;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.accordion-content.open {
+    /* Classe ativada pelo JS: Mostra o conteúdo */
+    max-height: 500px; /* Valor alto para caber o conteúdo */
+    padding: 15px 20px;
+}
+
+.accordion-content p {
+    color: #ccc;
+    padding-bottom: 10px;
+}
+
+/* 2. Cards de Serviço/Time (Exemplo) */
+.card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}

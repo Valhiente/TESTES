@@ -1,0 +1,70 @@
+/*
+ * modules/forms.css
+ * Estilização de Inputs, Textareas e Mensagens de Feedback.
+ * Suporta setupFormSubmission.js.
+ */
+
+.contact-form, .franchise-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #1a1a1a; /* Fundo levemente diferente para contraste */
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: var(--color-text-light);
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+/* ------------------------------------- */
+/* MENSAGENS DE FEEDBACK (Manipulado pelo JS) */
+/* ------------------------------------- */
+#form-message {
+    padding: 12px 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+#form-message.hidden {
+    display: none; /* Esconde completamente */
+    opacity: 0;
+}
+
+#form-message.success {
+    background-color: #1e4d3a; /* Fundo verde escuro */
+    color: #c8e6c9; /* Texto verde claro */
+}
+
+#form-message.error {
+    background-color: #721c24; /* Fundo vermelho escuro */
+    color: #f8d7da; /* Texto vermelho claro */
+}

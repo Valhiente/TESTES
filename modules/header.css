@@ -1,0 +1,119 @@
+/*
+ * modules/header.css
+ * Estilização do Header e Navegação.
+ * Suporta setupMenuToggle.js e setupHeaderScroll.js.
+ */
+
+.site-header {
+    background-color: transparent;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de Rolagem (Manipulado pelo JS) */
+.site-header.scrolled {
+    background-color: var(--color-secondary); /* Fundo sólido ao rolar */
+    padding: 10px 0; /* Diminui a altura */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Altura do logo */
+    max-width: 100%;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 30px;
+}
+
+.main-nav ul li a {
+    color: var(--color-text-light);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 0;
+    position: relative;
+}
+
+.main-nav ul li a:hover {
+    color: var(--color-primary);
+}
+
+/* Indicador do menu (Melhoria: Sublinhado dinâmico) */
+.main-nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.main-nav ul li a:hover::after,
+.main-nav ul li a.active::after {
+    width: 100%;
+}
+
+/* ------------------------------------- */
+/* MOBILE - Menu Hambúrguer */
+/* ------------------------------------- */
+
+.menu-toggle {
+    display: none; /* Escondido por padrão no desktop */
+    font-size: 28px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--color-text-light);
+    z-index: 1001; /* Garante que o X fique em cima de tudo */
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o ícone de hambúrguer no mobile */
+    }
+
+    .main-nav {
+        /* Estado padrão: Escondido no mobile */
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95); /* Fundo escuro semi-transparente */
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .main-nav.active {
+        /* Classe ativada pelo JS: Mostra o menu */
+        display: flex;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin: 15px 0;
+    }
+}

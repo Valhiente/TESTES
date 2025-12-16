@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franquia FORBODY ACADEMIA | Invista em Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../imag/favicon.png"> 
+    <link rel="stylesheet" href="../css/styles.css"> 
+</head>
+<body class="site-page">
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="logo-for">FOR</span><span class="logo-body">BODY</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="sobre.html">A FORBODY</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px;">
+        <section class="franchise-section">
+            <div class="container">
+                <h1 class="section-title">Seja um Franqueado</h1>
+                <form id="franchise-form" class="franchise-form" action="https://formspree.io/f/exyvrkkk" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="Email" required>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Enviar Candidatura</button>
+                    <p id="form-message" class="hidden"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="../modules/script.js"></script>
+</body>
+</html>
