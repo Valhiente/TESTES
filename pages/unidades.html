@@ -3,19 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidades FORBODY ACADEMIA | Encontre a Mais Próxima</title>
-    <meta name="description" content="Localize todas as unidades da FORBODY ACADEMIA em Ribeirão Preto. Informações de endereço, horários e link para matrícula.">
-    <link rel="canonical" href="https://www.forbodyacademia.com.br/unidades"/> 
+    <title>Unidades FORBODY ACADEMIA | Ribeirão Preto</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../imag/favicon.png"> 
     <link rel="stylesheet" href="../css/styles.css"> 
+    <style>
+        .units-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .unit-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .unit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: var(--f-highlight);
+        }
+        .unit-card h3 { color: var(--f-highlight); margin-bottom: 10px; }
+        .unit-card p { color: #555; margin-bottom: 20px; font-size: 0.95rem; }
+        .status-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .status-open { background: #e6fffa; color: #2c7a7b; }
+        .status-soon { background: #fff5f5; color: #c53030; }
+    </style>
 </head>
 <body class="site-page">
     <header class="site-header">
         <div class="container">
             <div class="logo">
                 <a href="../index.html">
-                    <span class="logo-for">FOR</span><span class="logo-body">BODY</span>
+                    <span class="logo-for" style="color:white; font-family:'Oswald'">FOR</span><span style="color:#A5002A; font-family:'Oswald'">BODY</span>
                 </a>
             </div>
             <nav class="main-nav">
@@ -28,31 +60,54 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle">☰</div>
+            <div class="menu-toggle" style="color: white;">☰</div>
         </div>
     </header>
 
-    <main style="padding-top: 120px;">
-        <section class="units-section">
-            <div class="container">
-                <h1 class="section-title">Nossas Unidades</h1>
-                <div class="row" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-                    <div class="unit-card" style="border: 1px solid var(--f-highlight); padding: 20px; border-radius: 8px; width: 300px;">
-                        <h3 style="color: var(--f-highlight);">Unidade Triunfo</h3>
-                        <p>📍 R. Triunfo, 385</p>
-                        <a href="https://maps.app.goo.gl/..." target="_blank" class="btn-secondary" style="display: inline-block; margin-top: 10px;">Ver no Mapa</a>
-                    </div>
-                    </div>
+    <main style="padding-top: 140px; padding-bottom: 60px;">
+        <div class="container">
+            <h1 class="section-title">Nossas Unidades em Ribeirão Preto</h1>
+            <p style="text-align: center; color: #666; max-width: 700px; margin: 0 auto 40px;">Escolha a unidade mais próxima de você e venha treinar com a melhor tecnologia fitness da região.</p>
+
+            <div class="units-grid">
+                <div class="unit-card">
+                    <span class="status-badge status-open">Aberta</span>
+                    <h3>Triunfo</h3>
+                    <p>📍 Rua Triunfo, 385<br>Ribeirão Preto - SP</p>
+                    <a href="https://maps.google.com/?q=Rua+Triunfo+385+Ribeirao+Preto" target="_blank" class="btn-primary" style="display:block;">Ver no Mapa</a>
+                </div>
+
+                <div class="unit-card">
+                    <span class="status-badge status-open">Aberta</span>
+                    <h3>Barão do Bananal</h3>
+                    <p>📍 Av. Barão do Bananal, 820<br>Ribeirão Preto - SP</p>
+                    <a href="https://maps.google.com/?q=Av+Barao+do+Bananal+820+Ribeirao+Preto" target="_blank" class="btn-primary" style="display:block;">Ver no Mapa</a>
+                </div>
+
+                <div class="unit-card">
+                    <span class="status-badge status-open">Aberta</span>
+                    <h3>Vila Virgínia</h3>
+                    <p>📍 Rua Franco da Rocha, 1370<br>Ribeirão Preto - SP</p>
+                    <a href="https://maps.google.com/?q=Rua+Franco+da+Rocha+1370+Ribeirao+Preto" target="_blank" class="btn-primary" style="display:block;">Ver no Mapa</a>
+                </div>
+
+                <div class="unit-card" style="border-style: dashed; border-width: 2px;">
+                    <span class="status-badge status-soon">Em Breve</span>
+                    <h3>Cândido Portinari</h3>
+                    <p>📍 Próximo ao Mialich<br>Ribeirão Preto - SP</p>
+                    <a href="contato.html" class="btn-secondary" style="display:block; background: #555;">Me Avise no Lançamento</a>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" style="background: #121212; color: white; padding: 40px 0; text-align: center;">
         <div class="container">
-            <p>&copy; 2025 FORBODY ACADEMIA. Todos os direitos reservados.</p>
+            <p>© 2025 FORBODY ACADEMIA. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <script type="module" src="../modules/script.js"></script>
 </body>
+</html>
 </html>
