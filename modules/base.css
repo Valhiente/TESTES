@@ -2,7 +2,11 @@
  * modules/base.css
  * Nova Paleta: Branco, Bordô e Cimento Queimado
  */
-
+@import url('header.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('footer.css');
+@import url('forms.css');
 :root {
     --f-primary: #FFFFFF;        /* Fundo/Elementos - Branco */
     --f-secondary: #F0F0F0;      /* Elementos - Cinza Claro (Boxes) */
@@ -78,4 +82,5 @@ a {
 .btn-secondary:hover {
     background-color: var(--f-highlight); 
     color: #FFFFFF !important; 
+
 }
