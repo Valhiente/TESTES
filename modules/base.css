@@ -7,6 +7,7 @@
 @import url('components.css');
 @import url('footer.css');
 @import url('forms.css');
+
 :root {
     --f-primary: #FFFFFF;        /* Fundo/Elementos - Branco */
     --f-secondary: #F0F0F0;      /* Elementos - Cinza Claro (Boxes) */
@@ -84,3 +85,4 @@ a {
     color: #FFFFFF !important; 
 
 }
+
