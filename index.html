@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FORBODY ACADEMIA | Performance e Tecnologia</title>
+    <title>ForBody Academia | Performance e Tecnologia</title>
 
-    <meta name="description" content="Forbody Academia: tecnologia, performance e resultados reais em Ribeirão Preto.">
+    <meta name="description" content="ForBody Academia: tecnologia, performance e resultados reais em Ribeirão Preto.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,39 +16,38 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="imag/favicon.png">
 
-    <!-- CSS Base -->
-    <link rel="stylesheet" href="css/base.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="modules/base.css">
 </head>
 
 <body>
 
 <!-- ================= HEADER ================= -->
 <header class="site-header">
-    <div class="container header-content">
+    <div class="container nav-content">
 
         <!-- Logo -->
         <div class="logo">
-            <a href="index.html" aria-label="Forbody Academia">
-                <span class="logo-for">FOR</span>
-                <span class="logo-body">BODY</span>
+            <a href="index.html" aria-label="ForBody Academia">
+                <span class="logo-for">FOR</span><span class="logo-body">BODY</span>
             </a>
         </div>
 
         <!-- Navegação -->
         <nav class="main-nav" aria-label="Menu principal">
             <ul>
-                <li><a href="pages/franquia.html">Franquia</a></li>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="pages/sobre.html">A Forbody</a></li>
+                <li><a href="pages/sobre.html">A ForBody</a></li>
                 <li><a href="pages/unidades.html">Unidades</a></li>
                 <li><a href="pages/modalidades.html">Modalidades</a></li>
                 <li><a href="pages/plano.html">Planos</a></li>
+                <li><a href="pages/franquia.html">Franquia</a></li>
                 <li><a href="pages/contato.html">Contato</a></li>
             </ul>
         </nav>
 
         <!-- Menu Mobile -->
-        <button class="menu-toggle" aria-label="Abrir menu"></button>
+        <div class="menu-toggle">☰</div>
 
     </div>
 </header>
@@ -56,12 +55,19 @@
 <!-- ================= MAIN ================= -->
 <main class="home-main">
 
-    <!-- Hero -->
+    <!-- HERO -->
     <section class="hero">
         <div class="container hero-content">
-            <h1>Seu Desempenho Começa Aqui</h1>
-            <p>A academia mais receptiva de Ribeirão Preto.</p>
-            <a href="pages/plano.html" class="btn-primary">Ver Planos</a>
+            <h1>Performance começa com atitude</h1>
+            <p>
+                Tecnologia, acolhimento e resultado real.<br>
+                Treine na academia que entende você.
+            </p>
+
+            <div style="margin-top: 30px;">
+                <a href="pages/plano.html" class="btn-primary">Conheça os Planos</a>
+                <a href="pages/unidades.html" class="btn-secondary" style="margin-left: 15px;">Ver Unidades</a>
+            </div>
         </div>
     </section>
 
@@ -69,14 +75,13 @@
 
 <!-- ================= FOOTER ================= -->
 <footer class="site-footer">
-    <div class="container">
+    <div class="container text-center">
         <p>© 2025 FORBODY ACADEMIA. Todos os direitos reservados.</p>
     </div>
 </footer>
 
-<!-- ================= SCRIPTS ================= -->
+<!-- ================= JS ================= -->
 <script type="module" src="modules/script.js"></script>
 
 </body>
 </html>
-
