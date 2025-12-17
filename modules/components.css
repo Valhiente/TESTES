@@ -1,15 +1,14 @@
 /*
- * modules/components.css
- * Estilos para componentes como o Acordeão (FAQ) e Cards.
- * Suporta setupAccordion.js.
+ * css/components.css
+ * Componentes reutilizáveis da FORBODY
+ * Accordion, Cards e elementos visuais
  */
 
-/* 1. Acordeão (FAQ) */
+/* ================= ACCORDION (FAQ) ================= */
 .accordion-item {
-    background-color: #1a1a1a;
-    border: 1px solid #333;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    background-color: var(--f-secondary);
+    border: 1px solid #ddd;
+    border-radius: 6px;
     overflow: hidden;
 }
 
@@ -17,65 +16,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #222;
+    padding: 18px 22px;
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 0.3s ease;
-    color: var(--color-text-light);
+    background-color: var(--f-primary);
+    color: var(--f-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .accordion-header:hover {
-    background-color: #333;
+    background-color: #f7f7f7;
 }
 
 .accordion-header::after {
     content: '+';
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--f-highlight);
     transition: transform 0.3s ease;
 }
 
 .accordion-header.active {
-    background-color: var(--color-primary); /* Fica laranja quando aberto */
-    color: var(--color-text-light);
+    background-color: var(--f-highlight);
+    color: #fff;
 }
 
 .accordion-header.active::after {
-    content: '-';
+    content: '–';
+    color: #fff;
 }
 
 .accordion-content {
-    /* Estado padrão: Escondido */
+    overflow: hidden;
     max-height: 0;
-    overflow: hidden;
-    padding: 0 20px;
-    background-color: #1a1a1a;
-    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
-}
-
-.accordion-content.open {
-    /* Classe ativada pelo JS: Mostra o conteúdo */
-    max-height: 500px; /* Valor alto para caber o conteúdo */
-    padding: 15px 20px;
-}
-
-.accordion-content p {
-    color: #ccc;
-    padding-bottom: 10px;
-}
-
-/* 2. Cards de Serviço/Time (Exemplo) */
-.card {
-    background-color: #1a1a1a;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
+    padding: 0 22px;
+    background-color: var(--f-secondary);
+    transition: max-height 0.4s
