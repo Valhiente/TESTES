@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato FORBODY ACADEMIA | Dúvidas e Suporte</title>
-    <meta name="description" content="Entre em contato com o suporte da FORBODY ACADEMIA. Envie sua mensagem, tire dúvidas sobre planos, unidades ou envie sugestões.">
-    <link rel="canonical" href="https://www.forbodyacademia.com.br/contato"/> 
+    <title>Contato | FORBODY ACADEMIA</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../imag/favicon.png"> 
     <link rel="stylesheet" href="../modules/base.css"> 
@@ -14,62 +12,31 @@
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="../index.html">
-                    <span class="logo-for">FOR</span><span class="logo-body">BODY</span>
-                </a>
+                <a href="../index.html"><span style="color:white; font-family:'Oswald'">FOR</span><span style="color:#A5002A; font-family:'Oswald'">BODY</span></a>
             </div>
             <nav class="main-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="sobre.html">A FORBODY</a></li>
-                    <li><a href="unidades.html">Unidades</a></li>
-                    <li><a href="modalidades.html">Modalidades</a></li>
-                    <li><a href="plano.html">Nossos Planos</a></li>
                     <li><a href="contato.html" class="active">Contato</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle">☰</div>
+            <div class="menu-toggle" style="color: white; cursor: pointer;">☰</div>
         </div>
     </header>
 
-    <main style="padding-top: 120px;">
-        <section class="contact-section">
-            <div class="container">
-                <h1 class="section-title">Fale Conosco</h1>
-                <div class="row">
-                    <div class="col-2">
-                        <h3>Canais de Atendimento</h3>
-                        <p>📍 Unidade Sede: Ribeirão Preto, SP</p>
-                        <p>📧 Email: administrativo@forbodyacademia.com.br</p>
-                        <p>💬 WhatsApp: (16) 99999-9999</p>
-                    </div>
-                    <div class="col-2">
-                        <form id="contact-form" class="contact-form" action="https://formspree.io/f/exyvrkkk" method="POST">
-                            <label for="nome">Seu Nome:</label>
-                            <input type="text" id="nome" name="Nome" required>
-                            <label for="email">Seu E-mail:</label>
-                            <input type="email" id="email" name="Email" required>
-                            <label for="assunto">Assunto:</label>
-                            <input type="text" id="assunto" name="Assunto" required>
-                            <label for="mensagem">Mensagem:</label>
-                            <textarea id="mensagem" name="Mensagem" rows="5" required></textarea>
-                            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 15px;">Enviar Mensagem</button>
-                            <p id="form-message" class="hidden"></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 FORBODY ACADEMIA. Todos os direitos reservados. | <a href="contato.html" style="color: var(--f-cimento);">Fale Conosco</a></p>
-            <p>Política de Privacidade | <a href="franquia.html" style="color: var(--f-highlight);">Seja um Franqueado</a></p>
+    <main style="padding-top: 140px;">
+        <div class="container" style="max-width: 600px;">
+            <h1 class="section-title">Fale Conosco</h1>
+            <form id="contact-form" action="https://formspree.io/f/exyvrkkk" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                <input type="text" name="Nome" placeholder="Seu Nome" required style="padding: 12px; border: 1px solid #ddd;">
+                <input type="email" name="Email" placeholder="Seu E-mail" required style="padding: 12px; border: 1px solid #ddd;">
+                <textarea name="Mensagem" placeholder="Como podemos ajudar?" rows="5" style="padding: 12px; border: 1px solid #ddd;"></textarea>
+                <button type="submit" style="background: #A5002A; color: white; padding: 15px; border: none; font-weight: bold; cursor: pointer;">ENVIAR MENSAGEM</button>
+                <p id="form-message" class="hidden"></p>
+            </form>
         </div>
-    </footer>
+    </main>
 
     <script type="module" src="../modules/script.js"></script>
 </body>
-
 </html>
