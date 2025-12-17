@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Planos | FORBODY ACADEMIA</title>
+    <title>Planos | FORBODY ACADEMIA</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../imag/favicon.png"> 
     <link rel="stylesheet" href="../modules/base.css"> 
@@ -12,36 +12,38 @@
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <a href="../index.html"><span class="logo-for">FOR</span><span class="logo-body">BODY</span></a>
+                <a href="../index.html"><span style="color:white; font-family:'Oswald'">FOR</span><span style="color:#A5002A; font-family:'Oswald'">BODY</span></a>
             </div>
             <nav class="main-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="plano.html" class="active">Nossos Planos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle">☰</div>
+            <div class="menu-toggle" style="color: white; cursor: pointer;">☰</div>
         </div>
     </header>
 
-    <main style="padding-top: 120px;">
-        <section class="container">
+    <main style="padding-top: 140px;">
+        <div class="container">
             <h1 class="section-title">Escolha seu Plano</h1>
-            <div class="row">
-                <div class="col-2" style="border: 2px solid var(--f-highlight); padding: 20px;">
-                    <h2>Plano RED</h2>
-                    <p>A partir de R$ 99,90</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 50px;">
+                <div style="border: 2px solid #ddd; padding: 40px; border-radius: 15px; width: 300px; text-align: center;">
+                    <h2 style="font-family: 'Oswald'; color: #333;">PLANO RED</h2>
+                    <p style="font-size: 2rem; color: #A5002A; font-weight: bold;">R$ 99,90</p>
+                    <p style="margin: 20px 0;">Treine na sua unidade de escolha.</p>
+                    <button style="width: 100%; padding: 10px; background: #333; color: white; border: none;">MATRICULE-SE</button>
                 </div>
-                <div class="col-2" style="background-color: var(--f-highlight); color: white; padding: 20px;">
-                    <h2>Plano BLACK</h2>
-                    <p>Treine em todas as unidades.</p>
+                <div style="border: 2px solid #A5002A; padding: 40px; border-radius: 15px; width: 300px; text-align: center; background: #fff;">
+                    <h2 style="font-family: 'Oswald'; color: #A5002A;">PLANO BLACK</h2>
+                    <p style="font-size: 2rem; color: #A5002A; font-weight: bold;">R$ 119,90</p>
+                    <p style="margin: 20px 0;">Acesso livre a todas as unidades.</p>
+                    <button style="width: 100%; padding: 10px; background: #A5002A; color: white; border: none;">MATRICULE-SE</button>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <script type="module" src="../modules/script.js"></script>
 </body>
-
 </html>
