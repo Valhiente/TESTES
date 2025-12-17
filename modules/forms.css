@@ -1,70 +1,94 @@
 /*
- * modules/forms.css
- * Estilização de Inputs, Textareas e Mensagens de Feedback.
- * Suporta setupFormSubmission.js.
+ * css/forms.css
+ * Estilo premium para formulários FORBODY
+ * Compatível com setupFormSubmission.js
  */
 
-.contact-form, .franchise-form {
+/* ================= FORM CONTAINER ================= */
+.contact-form,
+.franchise-form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 30px;
-    background-color: #1a1a1a; /* Fundo levemente diferente para contraste */
-    border-radius: 8px;
+    padding: 40px 35px;
+    background-color: var(--f-secondary);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+/* ================= FORM GROUP ================= */
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--f-text);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="tel"],
+/* ================= INPUTS ================= */
+.form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #444;
-    background-color: #222;
-    color: var(--color-text-light);
-    border-radius: 4px;
-    transition: border-color 0.3s;
+    padding: 14px 15px;
+    border: 1px solid #ccc;
+    background-color: var(--f-primary);
+    color: var(--f-text);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+/* ================= FOCUS ================= */
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: var(--color-primary);
+    border-color: var(--f-highlight);
+    box-shadow: 0 0 0 3px rgba(165, 0, 42, 0.15);
     outline: none;
 }
 
-/* ------------------------------------- */
-/* MENSAGENS DE FEEDBACK (Manipulado pelo JS) */
-/* ------------------------------------- */
+/* ================= BOTÃO ================= */
+.form-group button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ================= FEEDBACK ================= */
 #form-message {
-    padding: 12px 15px;
-    margin-top: 20px;
-    border-radius: 4px;
-    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 18px;
+    border-radius: 6px;
+    font-weight: 600;
     text-align: center;
-    transition: opacity 0.5s ease;
-    opacity: 1;
+    transition: opacity 0.4s ease;
 }
 
 #form-message.hidden {
-    display: none; /* Esconde completamente */
-    opacity: 0;
+    display: none;
 }
 
 #form-message.success {
-    background-color: #1e4d3a; /* Fundo verde escuro */
-    color: #c8e6c9; /* Texto verde claro */
+    background-color: #e6f4ea;
+    color: #1e7e34;
+    border: 1px solid #b7e0c2;
 }
 
 #form-message.error {
-    background-color: #721c24; /* Fundo vermelho escuro */
-    color: #f8d7da; /* Texto vermelho claro */
+    background-color: #f8e1e1;
+    color: #a71d2a;
+    border: 1px solid #f1b5b5;
 }
