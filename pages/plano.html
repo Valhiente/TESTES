@@ -4,48 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planos | FORBODY ACADEMIA</title>
+
+    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../imag/favicon.png"> 
-    <link rel="stylesheet" href="../modules/base.css"> 
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../imag/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../modules/base.css">
 </head>
 <body class="site-page">
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="../index.html"><span style="color:white; font-family:'Oswald'">FOR</span><span style="color:#A5002A; font-family:'Oswald'">BODY</span></a>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="pages/franquia.html">Franquia</a></li>
-                    <li><a href="plano.html" class="active">Nossos Planos</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle" style="color: white; cursor: pointer;">☰</div>
-        </div>
-    </header>
 
-    <main style="padding-top: 140px;">
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="container nav-content">
+        <div class="logo">
+            <a href="../index.html">
+                <span class="logo-for">FOR</span><span class="logo-body">BODY</span>
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="franquia.html">Franquia</a></li>
+                <li><a href="plano.html" class="active">Planos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle">☰</div>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="container text-center">
+        <h1>Escolha seu Plano</h1>
+        <p>Planos flexíveis para acompanhar sua evolução.</p>
+    </div>
+</section>
+
+<!-- ================= PLANOS ================= -->
+<main>
+    <section>
         <div class="container">
-            <h1 class="section-title">Escolha seu Plano</h1>
-            <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 50px;">
-                <div style="border: 2px solid #ddd; padding: 40px; border-radius: 15px; width: 300px; text-align: center;">
-                    <h2 style="font-family: 'Oswald'; color: #333;">PLANO RED</h2>
-                    <p style="font-size: 2rem; color: #A5002A; font-weight: bold;">R$ 99,90</p>
-                    <p style="margin: 20px 0;">Treine na sua unidade de escolha.</p>
-                    <button style="width: 100%; padding: 10px; background: #333; color: white; border: none;">MATRICULE-SE</button>
+            <div class="row align-center">
+
+                <!-- PLANO RED -->
+                <div class="col-2">
+                    <div class="card">
+                        <h3>Plano Red</h3>
+                        <p class="price">R$ 99,90</p>
+                        <p>Acesso livre a todas as unidades.</p>
+                        <a href="contato.html" class="btn-secondary">Matricule-se</a>
+                    </div>
                 </div>
-                <div style="border: 2px solid #A5002A; padding: 40px; border-radius: 15px; width: 300px; text-align: center; background: #fff;">
-                    <h2 style="font-family: 'Oswald'; color: #A5002A;">PLANO BLACK</h2>
-                    <p style="font-size: 2rem; color: #A5002A; font-weight: bold;">R$ 119,90</p>
-                    <p style="margin: 20px 0;">Acesso livre a todas as unidades.</p>
-                    <button style="width: 100%; padding: 10px; background: #A5002A; color: white; border: none;">MATRICULE-SE</button>
+
+                <!-- PLANO BLACK -->
+                <div class="col-2">
+                    <div class="card highlight">
+                        <h3>Plano Black</h3>
+                        <p class="price">R$ 109,90</p>
+                        <p>Acesso livre a todas as unidades.</p>
+                        <a href="contato.html" class="btn-primary">Matricule-se</a>
+                    </div>
                 </div>
+
             </div>
         </div>
-    </main>
+    </section>
+</main>
 
-    <script type="module" src="../modules/script.js"></script>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container text-center">
+        <p>© 2025 FORBODY ACADEMIA. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- ================= JS ================= -->
+<script type="module" src="../modules/script.js"></script>
+
 </body>
 </html>
-
