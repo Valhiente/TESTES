@@ -6,7 +6,9 @@
     <title>Unidades FORBODY ACADEMIA | Ribeirão Preto</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="../imag/favicon.png"> 
-    <link rel="stylesheet" href="../modules/base.css">
+    
+    <link rel="stylesheet" href="../modules/base.css"> 
+
     <style>
         .units-grid {
             display: grid;
@@ -25,9 +27,9 @@
         .unit-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            border-color: var(--f-highlight);
+            border-color: #A5002A; /* Cor de destaque direta para evitar erro de variável */
         }
-        .unit-card h3 { color: var(--f-highlight); margin-bottom: 10px; }
+        .unit-card h3 { color: #A5002A; margin-bottom: 10px; }
         .unit-card p { color: #555; margin-bottom: 20px; font-size: 0.95rem; }
         .status-badge {
             display: inline-block;
@@ -60,7 +62,7 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle" style="color: white;">☰</div>
+            <div class="menu-toggle" style="color: white; cursor: pointer;">☰</div>
         </div>
     </header>
 
@@ -74,28 +76,28 @@
                     <span class="status-badge status-open">Aberta</span>
                     <h3>Triunfo</h3>
                     <p>📍 Rua Triunfo, 385<br>Ribeirão Preto - SP</p>
-                    <a href="https://maps.google.com/?q=Rua+Triunfo+385+Ribeirao+Preto" target="_blank" class="btn-primary" style="display:block;">Ver no Mapa</a>
+                    <a href="https://www.google.com/maps?q=Rua+Triunfo+385+Ribeirao+Preto" target="_blank" class="btn-primary" style="display:block; text-decoration: none; background: #A5002A; color: white; padding: 10px; border-radius: 5px;">Ver no Mapa</a>
                 </div>
 
                 <div class="unit-card">
                     <span class="status-badge status-open">Aberta</span>
                     <h3>Barão do Bananal</h3>
                     <p>📍 Av. Barão do Bananal, 820<br>Ribeirão Preto - SP</p>
-                    <a href="https://maps.google.com/?q=Av+Barao+do+Bananal+820+Ribeirao+Preto" target="_blank" class="btn-primary" style="display:block;">Ver no Mapa</a>
+                    <a href="https://www.google.com/maps?q=Av+Barao+do+Bananal+820+Ribeirao+Preto" target="_blank" class="btn-primary" style="display:block; text-decoration: none; background: #A5002A; color: white; padding: 10px; border-radius: 5px;">Ver no Mapa</a>
                 </div>
 
                 <div class="unit-card">
                     <span class="status-badge status-open">Aberta</span>
                     <h3>Vila Virgínia</h3>
                     <p>📍 Rua Franco da Rocha, 1370<br>Ribeirão Preto - SP</p>
-                    <a href="https://maps.google.com/?q=Rua+Franco+da+Rocha+1370+Ribeirao+Preto" target="_blank" class="btn-primary" style="display:block;">Ver no Mapa</a>
+                    <a href="https://www.google.com/maps?q=Rua+Franco+da+Rocha+1370+Ribeirao+Preto" target="_blank" class="btn-primary" style="display:block; text-decoration: none; background: #A5002A; color: white; padding: 10px; border-radius: 5px;">Ver no Mapa</a>
                 </div>
 
                 <div class="unit-card" style="border-style: dashed; border-width: 2px;">
                     <span class="status-badge status-soon">Em Breve</span>
                     <h3>Cândido Portinari</h3>
                     <p>📍 Próximo ao Mialich<br>Ribeirão Preto - SP</p>
-                    <a href="contato.html" class="btn-secondary" style="display:block; background: #555;">Me Avise no Lançamento</a>
+                    <a href="contato.html" class="btn-secondary" style="display:block; background: #555; color: white; padding: 10px; border-radius: 5px; text-decoration: none;">Me Avise no Lançamento</a>
                 </div>
             </div>
         </div>
@@ -110,5 +112,3 @@
     <script type="module" src="../modules/script.js"></script>
 </body>
 </html>
-</html>
-
