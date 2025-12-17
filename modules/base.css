@@ -1,76 +1,109 @@
 /*
- * modules/base.css
- * Nova Paleta: Branco, Bordô e Cimento Queimado
+ * css/base.css
+ * Identidade Forbody — Branco, Bordô e Cimento Queimado
  */
-@import url('header.css');
-@import url('layout.css');
-@import url('components.css');
-@import url('footer.css');
-@import url('forms.css');
 
+/* ================= IMPORTS ================= */
+@import url('./header.css');
+@import url('./layout.css');
+@import url('./components.css');
+@import url('./footer.css');
+@import url('./forms.css');
+
+/* ================= VARIÁVEIS ================= */
 :root {
-    --f-primary: #FFFFFF;        /* Fundo/Elementos - Branco */
-    --f-secondary: #F0F0F0;      /* Elementos - Cinza Claro (Boxes) */
-    --f-highlight: #A5002A;      /* Ação/Destaque - Bordô Forte */
-    --f-highlight-dark: #800020; /* Bordô Escuro (hover) */
-    --f-cimento: #555555;        /* Corpo de Texto - Cinza Escuro */
-    --f-text: #121212;           /* Texto Principal - Preto Escuro */
+    --f-primary: #FFFFFF;
+    --f-secondary: #F0F0F0;
+    --f-highlight: #A5002A;
+    --f-highlight-dark: #800020;
+    --f-cimento: #555555;
+    --f-text: #121212;
+    --f-header-bg: #4a0014;
+
     --f-spacing: 20px;
-    --f-header-bg: #4a0014;      /* Fundo Bordô Sólido para o Header */
+    --f-header-height: 120px;
 }
 
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ================= BASE ================= */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--f-primary); 
+    background-color: var(--f-primary);
     color: var(--f-text);
     line-height: 1.6;
 }
 
-/* Títulos Premium */
+/* Compensação do header fixo */
+main {
+    padding-top: var(--f-header-height);
+}
+
+/* ================= TIPOGRAFIA ================= */
 h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     color: var(--f-highlight);
-    letter-spacing: 1.5px; 
+    letter-spacing: 1.5px;
+}
+
+p {
+    color: var(--f-cimento);
 }
 
 a {
     text-decoration: none;
-    color: var(--f-highlight); 
-    transition: 0.3s;
+    color: var(--f-highlight);
+    transition: 0.3s ease;
 }
 
+a:hover {
+    color: var(--f-highlight-dark);
+}
+
+/* ================= CONTAINER ================= */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--f-spacing);
 }
 
-/* Botões com a nova identidade */
+/* ================= BOTÕES ================= */
 .btn-primary {
-    background-color: var(--f-highlight); 
-    color: #FFFFFF !important; 
-    padding: 15px 35px; 
-    font-weight: bold;
+    display: inline-block;
+    background-color: var(--f-highlight);
+    color: #FFFFFF !important;
+    padding: 15px 35px;
+    font-weight: 700;
     border-radius: 4px;
-    border: none;
-    cursor: pointer;
     text-transform: uppercase;
+    transition: 0.3s ease;
 }
 
 .btn-primary:hover {
     background-color: var(--f-highlight-dark);
-    transform: translateY(-3px); 
-    box-shadow: 0 5px 15px rgba(165, 0, 42, 0.4); 
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(165, 0, 42, 0.4);
 }
 
 .btn-secondary {
+    display: inline-block;
     background-color: transparent;
     border: 2px solid var(--f-highlight);
     color: var(--f-highlight) !important;
@@ -78,12 +111,10 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 4px;
+    transition: 0.3s ease;
 }
 
 .btn-secondary:hover {
-    background-color: var(--f-highlight); 
-    color: #FFFFFF !important; 
-
+    background-color: var(--f-highlight);
+    color: #FFFFFF !important;
 }
-
-
