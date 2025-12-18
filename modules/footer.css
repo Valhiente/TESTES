@@ -1,0 +1,71 @@
+/*
+ * modules/footer.css
+ * Estilos do Rodapé
+ */
+
+.site-footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 40px 0;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Flexbox para distribuição */
+}
+
+.footer-section h4 {
+    color: var(--color-primary);
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-section p, .footer-section ul li {
+    font-size: 0.9em;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    display: block;
+}
+
+.footer-section ul li a:hover {
+    color: var(--color-primary);
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    color: var(--color-text-light);
+}
+
+.social-links a:hover {
+    color: var(--color-primary);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
