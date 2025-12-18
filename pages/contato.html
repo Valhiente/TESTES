@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | FORBODY ACADEMIA</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../imag/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../modules/base.css">
+</head>
+<body class="site-page">
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="container nav-content">
+        <div class="logo">
+            <a href="../index.html">
+                <span class="logo-for">FOR</span><span class="logo-body">BODY</span>
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="franquia.html">Franquia</a></li>
+                <li><a href="plano.html">Planos</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle">☰</div>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="container text-center">
+        <h1>Fale com a ForBody</h1>
+        <p>Estamos prontos para tirar suas dúvidas e te ajudar a começar.</p>
+    </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<main>
+    <section>
+        <div class="container">
+            <div class="row justify-center">
+                <div class="col-2">
+                    <div class="card">
+
+                        <form id="contact-form" action="https://formspree.io/f/exyvrkkk" method="POST" class="form">
+
+                            <label>
+                                Nome
+                                <input type="text" name="Nome" required>
+                            </label>
+
+                            <label>
+                                E-mail
+                                <input type="email" name="Email" required>
+                            </label>
+
+                            <label>
+                                Mensagem
+                                <textarea name="Mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+                            </label>
+
+                            <button type="submit" class="btn-primary">
+                                Enviar mensagem
+                            </button>
+
+                            <p id="form-message" class="hidden"></p>
+                            <p class="form-helper">
+                            Respondemos em até 24h úteis.
+                            </p>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container text-center">
+        <p>© 2025 FORBODY ACADEMIA. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- ================= JS ================= -->
+<script type="module" src="../modules/script.js"></script>
+
+</body>
+</html>

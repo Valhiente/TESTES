@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franquia | FORBODY ACADEMIA</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../imag/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../modules/base.css">
+</head>
+<body class="site-page">
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="container nav-content">
+
+        <div class="logo">
+            <a href="../index.html">
+                <span class="logo-for">FOR</span><span class="logo-body">BODY</span>
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="sobre.html">A FORBODY</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="modalidades.html">Modalidades</a></li>
+                <li><a href="plano.html">Planos</a></li>
+                <li><a href="franquia.html" class="active">Franquia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle">☰</div>
+    </div>
+</header>
+
+<!-- ================= HERO INTERNO ================= -->
+<section class="hero hero-internal">
+    <div class="container text-center">
+        <h1>Seja um Franqueado</h1>
+        <p>
+            Faça parte da rede de academias que mais cresce em Ribeirão Preto.
+        </p>
+
+        <p class="section-subtitle">
+            A ForBody é mais do que uma academia.
+            É um modelo de negócio validado, com foco em performance,
+            experiência do aluno e crescimento sustentável.
+        </p>
+    </div>
+</section>
+
+<!-- ================= CONTEÚDO ================= -->
+<main>
+
+    <!-- BENEFÍCIOS -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title">
+                Por que investir na ForBody?
+            </h2>
+
+            <ul class="benefits-list">
+                <li>✔ Marca forte e em expansão</li>
+                <li>✔ Modelo de operação enxuto</li>
+                <li>✔ Alto potencial de retorno</li>
+                <li>✔ Suporte completo ao franqueado</li>
+                <li>✔ Treinamento e padronização</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section class="section">
+        <div class="container container-sm">
+
+            <form
+                id="franchise-form"
+                class="form-default"
+                action="https://formspree.io/f/exyvrkkk"
+                method="POST"
+            >
+
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="Nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" name="Telefone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade onde deseja investir</label>
+                    <input type="text" id="cidade" name="Cidade" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="investimento">Faixa de investimento</label>
+                    <select id="investimento" name="Investimento" required>
+                        <option value="">Selecione</option>
+                        <option value="Até 100 mil">Até R$100 mil</option>
+                        <option value="100 a 200 mil">R$100 mil a R$200 mil</option>
+                        <option value="Acima de 200 mil">Acima de R$200 mil</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">
+                        Quero ser um franqueado
+                    </button>
+                </div>
+
+                <p id="form-message" class="form-message hidden"></p>
+
+            </form>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container text-center">
+        <p>© 2025 FORBODY ACADEMIA. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- ================= JS ================= -->
+<script type="module" src="../modules/script.js"></script>
+
+</body>
+</html>
