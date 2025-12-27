@@ -88,3 +88,4 @@ jobs:
     steps:
       - name: Fazer deploy no GitHub Pages
         id: deployment
+        uses: actions/deploy-pages@v4
